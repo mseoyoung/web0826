@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>생성자함수</title>
+    <!-- 생성자 함수
+     1. 생성자 함수의 이름의 첫글자는 대문자로 쓴다. -> 일반 함수와 구별
+
+    -->
+</head>
+<body>
+    <script>
+        function mb(mbimg,mbrank,mbtit,mbrate,mbdate,mbheart) {
+            this.영화이미지 = mbimg,
+            this.관람등급 =mbrank,
+            this.제목 = mbtit,
+            this,예매율 =mbrate,
+            this,개봉일 =mbdate,
+            this,하트 = mbheart,
+
+            this.설명 = function(){
+                alret(`당신이 선택한 ${this.제목}영화는?`)
+            }
+        }
+    </script>
+</body>
+</html>
