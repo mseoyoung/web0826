@@ -1,4 +1,3 @@
-
 /*  
     컴포넌트(구성요소)?
         HTML 요소를 반환하는 함수와 같다.
@@ -50,46 +49,6 @@ class Comp0 extends React.Component {
 function Comp1() {
     return <h2>난 함수형 컴포넌트야!</h2>;
 }
-
-// 컴포넌트 생성
-function Hello() {
-    // 리턴 뒤에 한 줄 문장
-    // return <h1>Hello World!</h1>
-    // 리턴 뒤에 두 줄 이상의 문장은 ( ); 로 묶고 문장 끝 ; 쓴다.
-    return (
-        <div className="card_list">
-            <div className="card_img">
-                <img
-                    src="https://img.megabox.co.kr/SharedImg/2024/07/03/QaslTt607PkNH8mPWm6ZUH3UwDx2bHoH_420.jpg"
-                    alt="사랑의 하츄핑"
-                />
-            </div>
-            <div>
-                <span className="card_age">All</span>
-                <h3 className="card_tit">사랑의 하츄핑</h3>
-            </div>
-            <div>
-                <span className="card_rate">예매율 1%</span>
-                <span className="card_date">개봉일 2024.08.07</span>
-            </div>
-            <div className="card_btn">
-                <button>487</button>
-                <a href="#">예매</a>
-            </div>
-        </div>
-    );
-}
-
-// function App(){
-//   return (
-//     <div style={{display: "flex"}}>
-//       <Hello />
-//       <Hello />
-//       <Hello />
-//       <Hello />
-//     </div>
-//   );
-// }
 
 const container0 = document.querySelectorAll(".item").item(0);
 const root0 = ReactDOM.createRoot(container0);
